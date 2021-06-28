@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_shared/src/file_system/server_file.dart';
-import 'package:flutter_shared/src/hive_db/hive_box.dart';
-import 'package:flutter_shared/src/themes/editor/theme_set.dart';
+import 'package:dvx_flutter/src/file_system/server_file.dart';
+import 'package:dvx_flutter/src/hive_db/hive_box.dart';
+import 'package:dvx_flutter/src/themes/editor/theme_set.dart';
 
 class Preferences extends ChangeNotifier {
   factory Preferences() {

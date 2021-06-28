@@ -1,4 +1,4 @@
-library flutter_shared_web;
+library dvx_flutter_web;
 
 export 'src/backgrounds/gradient_background.dart';
 export 'src/backgrounds/node_background.dart';

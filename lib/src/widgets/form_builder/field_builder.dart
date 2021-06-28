@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_shared/src/utils/string_utils.dart';
-import 'package:flutter_shared/src/utils/utils.dart';
+import 'package:dvx_flutter/src/utils/string_utils.dart';
+import 'package:dvx_flutter/src/utils/utils.dart';
 
-import 'package:flutter_shared/src/widgets/form_builder/form_params.dart';
-import 'package:flutter_shared/src/widgets/phone_input_utils.dart';
-import 'package:flutter_shared/src/extensions/string_ext.dart';
+import 'package:dvx_flutter/src/widgets/form_builder/form_params.dart';
+import 'package:dvx_flutter/src/widgets/phone_input_utils.dart';
+import 'package:dvx_flutter/src/extensions/string_ext.dart';
 
 class FieldBuilder {
   static List<Widget> fields({

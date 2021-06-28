@@ -2,12 +2,12 @@ import 'dart:io';
 
 import 'package:extended_image/extended_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_shared/src/utils/utils.dart';
-import 'package:flutter_shared/src/widgets/image/image_viewer.dart';
+import 'package:dvx_flutter/src/utils/utils.dart';
+import 'package:dvx_flutter/src/widgets/image/image_viewer.dart';
 
-import 'package:flutter_shared/src/widgets/image/super_image_source.dart';
-import 'package:flutter_shared/src/widgets/transparent_route.dart';
-import 'package:flutter_shared/src/extensions/string_ext.dart';
+import 'package:dvx_flutter/src/widgets/image/super_image_source.dart';
+import 'package:dvx_flutter/src/widgets/transparent_route.dart';
+import 'package:dvx_flutter/src/extensions/string_ext.dart';
 
 class SuperImage extends StatelessWidget {
   const SuperImage(

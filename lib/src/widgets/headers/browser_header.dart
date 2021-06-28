@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_shared/src/utils/utils.dart';
-import 'package:flutter_shared/src/widgets/expandable_text.dart';
-import 'package:flutter_shared/src/widgets/headers/action_header.dart';
+import 'package:dvx_flutter/src/utils/utils.dart';
+import 'package:dvx_flutter/src/widgets/expandable_text.dart';
+import 'package:dvx_flutter/src/widgets/headers/action_header.dart';
 
 class BrowserHeader extends StatelessWidget {
   const BrowserHeader(

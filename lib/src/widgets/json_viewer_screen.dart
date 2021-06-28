@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_shared/src/utils/string_utils.dart';
-import 'package:flutter_shared/src/utils/utils.dart';
-import 'package:flutter_shared/src/widgets/json_widget.dart';
+import 'package:dvx_flutter/src/utils/string_utils.dart';
+import 'package:dvx_flutter/src/utils/utils.dart';
+import 'package:dvx_flutter/src/widgets/json_widget.dart';
 
 class JsonViewerScreen extends StatelessWidget {
   const JsonViewerScreen({

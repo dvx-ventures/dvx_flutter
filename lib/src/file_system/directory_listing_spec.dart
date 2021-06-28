@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:flutter_shared/src/file_system/server_file.dart';
+import 'package:dvx_flutter/src/file_system/server_file.dart';
 
 class DirectoryListingSpec {
   DirectoryListingSpec({

@@ -1,7 +1,7 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:flutter_shared/src/widgets/gradient_text.dart';
+import 'package:dvx_flutter/src/widgets/gradient_text.dart';
 
 class RotatingRainbowText extends StatefulWidget {
   const RotatingRainbowText({

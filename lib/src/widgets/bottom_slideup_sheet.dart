@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_shared/src/utils/utils.dart';
+import 'package:dvx_flutter/src/utils/utils.dart';
 
 abstract class SliderContent {
   int itemCount();

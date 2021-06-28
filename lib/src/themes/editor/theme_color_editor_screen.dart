@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:flutter_shared/src/themes/editor/theme_set.dart';
-import 'package:flutter_shared/src/themes/editor/theme_set_manager.dart';
-import 'package:flutter_shared/src/widgets/headers/browser_header.dart';
-import 'package:flutter_shared/src/widgets/list_row.dart';
-import 'package:flutter_shared/src/widgets/theme_button.dart';
+import 'package:dvx_flutter/src/themes/editor/theme_set.dart';
+import 'package:dvx_flutter/src/themes/editor/theme_set_manager.dart';
+import 'package:dvx_flutter/src/widgets/headers/browser_header.dart';
+import 'package:dvx_flutter/src/widgets/list_row.dart';
+import 'package:dvx_flutter/src/widgets/theme_button.dart';
 
 class ThemeColorEditorScreen extends StatefulWidget {
   const ThemeColorEditorScreen({required this.themeSet, required this.field});

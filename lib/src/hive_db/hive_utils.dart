@@ -1,9 +1,9 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_shared/src/hive_db/hive_box.dart';
-import 'package:flutter_shared/src/hive_db/hive_data.dart';
-import 'package:flutter_shared/src/utils/utils.dart';
+import 'package:dvx_flutter/src/hive_db/hive_box.dart';
+import 'package:dvx_flutter/src/hive_db/hive_data.dart';
+import 'package:dvx_flutter/src/utils/utils.dart';
 import 'package:hive/hive.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';

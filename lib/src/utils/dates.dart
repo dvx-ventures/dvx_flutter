@@ -1,4 +1,4 @@
-import 'package:flutter_shared/src/utils/utils.dart';
+import 'package:dvx_flutter/src/utils/utils.dart';
 import 'package:intl/intl.dart';
 
 class Dates {

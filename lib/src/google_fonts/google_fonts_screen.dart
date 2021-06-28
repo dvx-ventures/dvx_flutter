@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_shared/src/google_fonts/google_fonts_widget.dart';
+import 'package:dvx_flutter/src/google_fonts/google_fonts_widget.dart';
 
 class GoogleFontsScreen extends StatelessWidget {
   final String appBarTitle = 'Choose a Font';

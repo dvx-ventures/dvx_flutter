@@ -1,4 +1,4 @@
-import 'package:flutter_shared/src/extensions/num_ext.dart';
+import 'package:dvx_flutter/src/extensions/num_ext.dart';
 
 extension ExtendedDuration on Duration {
   String get elapsedString {

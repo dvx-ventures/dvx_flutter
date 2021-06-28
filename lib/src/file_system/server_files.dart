@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:flutter_shared/src/file_system/server_file.dart';
-import 'package:flutter_shared/src/file_system/standard_directories.dart';
+import 'package:dvx_flutter/src/file_system/server_file.dart';
+import 'package:dvx_flutter/src/file_system/standard_directories.dart';
 
 class ServerFiles {
   static ServerFile? serverFileForPath(String path, {bool verify = false}) {

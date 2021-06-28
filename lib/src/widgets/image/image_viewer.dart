@@ -7,11 +7,11 @@ import 'package:extended_image/extended_image.dart';
 import 'package:flutter/material.dart' hide Image;
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_shared/src/utils/utils.dart';
-import 'package:flutter_shared/src/widgets/image/super_image_source.dart';
+import 'package:dvx_flutter/src/utils/utils.dart';
+import 'package:dvx_flutter/src/widgets/image/super_image_source.dart';
 import 'package:open_file/open_file.dart';
 import 'package:random_string/random_string.dart';
-import 'package:flutter_shared/src/extensions/string_ext.dart';
+import 'package:dvx_flutter/src/extensions/string_ext.dart';
 
 double initScale({Size? imageSize, Size? size, double? initialScale}) {
   // final n1 = imageSize.height / imageSize.width;

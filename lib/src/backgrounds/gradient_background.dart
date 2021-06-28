@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_shared/src/backgrounds/gradient_painter.dart';
+import 'package:dvx_flutter/src/backgrounds/gradient_painter.dart';
 import 'package:simple_animations/simple_animations.dart';
 import 'package:supercharged/supercharged.dart';
 

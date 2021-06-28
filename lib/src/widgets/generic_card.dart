@@ -1,9 +1,9 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_shared/src/utils/utils.dart';
-import 'package:flutter_shared/src/widgets/menu_item.dart';
+import 'package:dvx_flutter/src/utils/utils.dart';
+import 'package:dvx_flutter/src/widgets/menu_item.dart';
 
-import 'package:flutter_shared/src/widgets/primary_title.dart';
+import 'package:dvx_flutter/src/widgets/primary_title.dart';
 
 const double kBorderRadius = 12;
 const double kSmallBorderRadius = 8;

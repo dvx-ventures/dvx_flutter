@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_shared/src/themes/editor/theme_set.dart';
-import 'package:flutter_shared/src/themes/editor/theme_set_manager.dart';
+import 'package:dvx_flutter/src/themes/editor/theme_set.dart';
+import 'package:dvx_flutter/src/themes/editor/theme_set_manager.dart';
 
 class ColorParams {
   ColorParams({this.integratedAppBar = true, this.transparentAppBar = false}) {

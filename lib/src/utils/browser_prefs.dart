@@ -1,6 +1,6 @@
-import 'package:flutter_shared/src/file_system/directory_listing_spec.dart';
-import 'package:flutter_shared/src/file_system/server_file.dart';
-import 'package:flutter_shared/src/hive_db/hive_box.dart';
+import 'package:dvx_flutter/src/file_system/directory_listing_spec.dart';
+import 'package:dvx_flutter/src/file_system/server_file.dart';
+import 'package:dvx_flutter/src/hive_db/hive_box.dart';
 
 class BrowserPrefs {
   static bool? get showHidden =>

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_shared/src/dialogs/string_dialog.dart';
-import 'package:flutter_shared/src/themes/editor/theme_editor_screen.dart';
-import 'package:flutter_shared/src/themes/editor/theme_set.dart';
-import 'package:flutter_shared/src/themes/editor/theme_set_manager.dart';
-import 'package:flutter_shared/src/utils/utils.dart';
-import 'package:flutter_shared/src/widgets/menu_item.dart';
+import 'package:dvx_flutter/src/dialogs/string_dialog.dart';
+import 'package:dvx_flutter/src/themes/editor/theme_editor_screen.dart';
+import 'package:dvx_flutter/src/themes/editor/theme_set.dart';
+import 'package:dvx_flutter/src/themes/editor/theme_set_manager.dart';
+import 'package:dvx_flutter/src/utils/utils.dart';
+import 'package:dvx_flutter/src/widgets/menu_item.dart';
 
 class ThemeSetButton extends StatelessWidget {
   const ThemeSetButton({

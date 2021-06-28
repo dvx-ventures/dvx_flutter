@@ -2,10 +2,10 @@ import 'dart:convert';
 
 import 'package:collection/collection.dart' show IterableExtension;
 import 'package:flutter/material.dart';
-import 'package:flutter_shared/src/themes/editor/theme_set.dart';
-import 'package:flutter_shared/src/utils/preferences.dart';
-import 'package:flutter_shared/src/utils/string_utils.dart';
-import 'package:flutter_shared/src/utils/utils.dart';
+import 'package:dvx_flutter/src/themes/editor/theme_set.dart';
+import 'package:dvx_flutter/src/utils/preferences.dart';
+import 'package:dvx_flutter/src/utils/string_utils.dart';
+import 'package:dvx_flutter/src/utils/utils.dart';
 
 class ThemeSetManager {
   factory ThemeSetManager() {

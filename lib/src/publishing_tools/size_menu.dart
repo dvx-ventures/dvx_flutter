@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_shared/src/widgets/menu_item.dart';
+import 'package:dvx_flutter/src/widgets/menu_item.dart';
 
 enum SizeType {
   imageSize,

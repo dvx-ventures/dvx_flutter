@@ -2,12 +2,12 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_shared/src/dialogs/confirm_dialog.dart';
-import 'package:flutter_shared/src/file_system/server_file.dart';
-import 'package:flutter_shared/src/hive_db/hive_box.dart';
-import 'package:flutter_shared/src/utils/browser_prefs.dart';
-import 'package:flutter_shared/src/utils/stack.dart';
-import 'package:flutter_shared/src/extensions/string_ext.dart';
+import 'package:dvx_flutter/src/dialogs/confirm_dialog.dart';
+import 'package:dvx_flutter/src/file_system/server_file.dart';
+import 'package:dvx_flutter/src/hive_db/hive_box.dart';
+import 'package:dvx_flutter/src/utils/browser_prefs.dart';
+import 'package:dvx_flutter/src/utils/stack.dart';
+import 'package:dvx_flutter/src/extensions/string_ext.dart';
 
 import 'package:hive/hive.dart';
 

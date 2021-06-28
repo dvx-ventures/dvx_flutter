@@ -2,12 +2,12 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_shared/src/file_system/server_file.dart';
-import 'package:flutter_shared/src/widgets/checkerboard_container.dart';
-import 'package:flutter_shared/src/widgets/video_player_widget.dart';
+import 'package:dvx_flutter/src/file_system/server_file.dart';
+import 'package:dvx_flutter/src/widgets/checkerboard_container.dart';
+import 'package:dvx_flutter/src/widgets/video_player_widget.dart';
 import 'package:intl/intl.dart';
 import 'package:native_pdf_renderer/native_pdf_renderer.dart';
-import 'package:flutter_shared/src/extensions/num_ext.dart';
+import 'package:dvx_flutter/src/extensions/num_ext.dart';
 
 class FileInfo extends StatefulWidget {
   const FileInfo(

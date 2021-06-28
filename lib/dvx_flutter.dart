@@ -1,6 +1,6 @@
-library flutter_shared;
+library dvx_flutter;
 
-export 'flutter_shared_web.dart';
+export 'dvx_flutter_web.dart';
 export 'src/file_system/file_system.dart';
 export 'src/file_system/server_files.dart';
 export 'src/file_system/standard_directories.dart';

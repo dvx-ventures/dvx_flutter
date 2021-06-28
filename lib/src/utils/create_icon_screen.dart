@@ -3,8 +3,8 @@ import 'dart:typed_data';
 import 'dart:ui' as ui;
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_shared/src/file_system/file_system.dart';
-import 'package:flutter_shared/src/widgets/colored_button.dart';
+import 'package:dvx_flutter/src/file_system/file_system.dart';
+import 'package:dvx_flutter/src/widgets/colored_button.dart';
 
 class CreateIconScreen extends StatefulWidget {
   @override

@@ -12,7 +12,7 @@ class _LoadingAnimationState extends State<LoadingAnimation> {
     return SizedBox(
       height: 100,
       width: 100,
-      child: FlareActor('packages/flutter_shared/assets/animations/loading.flr',
+      child: FlareActor('packages/dvx_flutter/assets/animations/loading.flr',
           color: Theme.of(context).primaryColor, animation: 'SlideThem'),
     );
   }

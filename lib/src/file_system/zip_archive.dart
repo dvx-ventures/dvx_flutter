@@ -1,6 +1,6 @@
 import 'dart:io';
-import 'package:flutter_shared/src/file_system/server_file.dart';
-import 'package:flutter_shared/src/utils/utils.dart';
+import 'package:dvx_flutter/src/file_system/server_file.dart';
+import 'package:dvx_flutter/src/utils/utils.dart';
 import 'package:path/path.dart' as p;
 
 import 'package:flutter_archive/flutter_archive.dart';

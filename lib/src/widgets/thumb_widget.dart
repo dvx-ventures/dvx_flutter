@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:flutter_shared/src/utils/rect_clipper.dart';
-import 'package:flutter_shared/src/utils/utils.dart';
+import 'package:dvx_flutter/src/utils/rect_clipper.dart';
+import 'package:dvx_flutter/src/utils/utils.dart';
 
 class ThumbWidget extends StatelessWidget {
   const ThumbWidget({

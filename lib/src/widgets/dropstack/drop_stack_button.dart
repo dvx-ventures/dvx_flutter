@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_shared/src/file_system/server_file.dart';
+import 'package:dvx_flutter/src/file_system/server_file.dart';
 
-import 'package:flutter_shared/src/widgets/dropstack/drop_stack.dart';
-import 'package:flutter_shared/src/widgets/dropstack/floating_action_bubble.dart';
-import 'package:flutter_shared/src/widgets/dropstack/overlay_container.dart';
+import 'package:dvx_flutter/src/widgets/dropstack/drop_stack.dart';
+import 'package:dvx_flutter/src/widgets/dropstack/floating_action_bubble.dart';
+import 'package:dvx_flutter/src/widgets/dropstack/overlay_container.dart';
 import 'package:provider/provider.dart';
 
 class DropStackButton extends StatefulWidget {

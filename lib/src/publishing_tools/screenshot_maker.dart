@@ -4,13 +4,13 @@ import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
-import 'package:flutter_shared/src/file_system/file_system.dart';
-import 'package:flutter_shared/src/publishing_tools/screenshot_params.dart';
+import 'package:dvx_flutter/src/file_system/file_system.dart';
+import 'package:dvx_flutter/src/publishing_tools/screenshot_params.dart';
 
-import 'package:flutter_shared/src/publishing_tools/phone_menu.dart';
-import 'package:flutter_shared/src/publishing_tools/phone_shapes.dart';
-import 'package:flutter_shared/src/publishing_tools/size_menu.dart';
-import 'package:flutter_shared/src/utils/utils.dart';
+import 'package:dvx_flutter/src/publishing_tools/phone_menu.dart';
+import 'package:dvx_flutter/src/publishing_tools/phone_shapes.dart';
+import 'package:dvx_flutter/src/publishing_tools/size_menu.dart';
+import 'package:dvx_flutter/src/utils/utils.dart';
 
 class CaptureResult {
   const CaptureResult(this.data, this.width, this.height);

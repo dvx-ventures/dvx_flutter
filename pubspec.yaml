@@ -1,4 +1,4 @@
-name: flutter_shared
+name: dvx_flutter
 description: A new Flutter package project.
 version: 1.0.1
 author: null
@@ -64,5 +64,5 @@ flutter:
   uses-material-design: true
 
   assets:
-    - packages/flutter_shared/assets/animations/treasure.flr
-    - packages/flutter_shared/assets/animations/loading.flr
+    - packages/dvx_flutter/assets/animations/treasure.flr
+    - packages/dvx_flutter/assets/animations/loading.flr

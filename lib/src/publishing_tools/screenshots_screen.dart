@@ -2,14 +2,14 @@ import 'dart:async';
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_shared/src/dialogs/string_dialog.dart';
+import 'package:dvx_flutter/src/dialogs/string_dialog.dart';
 
-import 'package:flutter_shared/src/publishing_tools/phone_menu.dart';
-import 'package:flutter_shared/src/publishing_tools/screenshot_maker.dart';
-import 'package:flutter_shared/src/publishing_tools/screenshot_menu.dart';
-import 'package:flutter_shared/src/publishing_tools/size_menu.dart';
-import 'package:flutter_shared/src/utils/utils.dart';
-import 'package:flutter_shared/src/widgets/colored_button.dart';
+import 'package:dvx_flutter/src/publishing_tools/phone_menu.dart';
+import 'package:dvx_flutter/src/publishing_tools/screenshot_maker.dart';
+import 'package:dvx_flutter/src/publishing_tools/screenshot_menu.dart';
+import 'package:dvx_flutter/src/publishing_tools/size_menu.dart';
+import 'package:dvx_flutter/src/utils/utils.dart';
+import 'package:dvx_flutter/src/widgets/colored_button.dart';
 
 class ScreenshotsScreen extends StatefulWidget {
   const ScreenshotsScreen({

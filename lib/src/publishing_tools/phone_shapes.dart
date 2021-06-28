@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 
-import 'package:flutter_shared/src/publishing_tools/phone_menu.dart';
-import 'package:flutter_shared/src/publishing_tools/screenshot_params.dart';
+import 'package:dvx_flutter/src/publishing_tools/phone_menu.dart';
+import 'package:dvx_flutter/src/publishing_tools/screenshot_params.dart';
 
 class PhoneShapes {
   static const Color cameraColor = Color.fromRGBO(70, 70, 70, 1);
