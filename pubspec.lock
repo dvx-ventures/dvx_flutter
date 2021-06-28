@@ -297,7 +297,7 @@ packages:
       name: hive_flutter
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.0"
+    version: "1.1.0"
   http:
     dependency: "direct main"
     description:
@@ -374,7 +374,7 @@ packages:
       name: native_pdf_renderer
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.0.0"
+    version: "3.1.0"
   nested:
     dependency: transitive
     description:
@@ -460,7 +460,7 @@ packages:
       name: pedantic
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.11.0"
+    version: "1.11.1"
   petitparser:
     dependency: transitive
     description:
@@ -502,7 +502,7 @@ packages:
       name: qr
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.0"
+    version: "2.1.0"
   random_string:
     dependency: "direct main"
     description:
@@ -649,7 +649,7 @@ packages:
       name: url_launcher
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "6.0.6"
+    version: "6.0.7"
   url_launcher_linux:
     dependency: transitive
     description:
@@ -726,7 +726,7 @@ packages:
       name: win32
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.1.5"
+    version: "2.2.4"
   xdg_directories:
     dependency: transitive
     description:
