@@ -115,7 +115,7 @@ class FieldBuilder {
           }
 
           if (mapKey == 'phone' && Utils.isNotEmpty(v)) {
-            return PhoneInputUtils.validator(v!);
+            return PhoneInputUtils.validator(v);
           }
 
           if (mapKey == 'email' && Utils.isNotEmpty(v)) {

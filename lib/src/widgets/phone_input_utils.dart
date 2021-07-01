@@ -32,10 +32,13 @@ class PhoneInputUtils {
     ];
   }
 
-  static String? validator(String value) {
-    if (!isPhoneValid(value)) {
-      return 'Phone is invalid';
+  static String? validator(String? value) {
+    if (value != null) {
+      if (!isPhoneValid(value)) {
+        return 'Phone is invalid';
+      }
     }
+
     return null;
   }
 }
