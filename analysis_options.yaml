@@ -3,6 +3,9 @@ include: package:lint/analysis_options.yaml
 # https://github.com/passsy/dart-lint/blob/master/lib/analysis_options.yaml
 
 analyzer:
+  exclude:
+    - lib/**/*.g.dart
+
   strong-mode:
     # Will become the default once non-nullable types land
     # https://github.com/dart-lang/sdk/issues/31410#issuecomment-510683629
