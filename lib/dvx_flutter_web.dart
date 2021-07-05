@@ -49,6 +49,7 @@ export 'src/themes/themes.dart';
 export 'src/utils/browser_prefs.dart';
 export 'src/utils/dates.dart';
 export 'src/utils/debouncer.dart';
+export 'src/utils/plist_parser.dart';
 export 'src/utils/preferences.dart';
 export 'src/utils/rect_clipper.dart';
 export 'src/utils/sort_menu_button.dart';
