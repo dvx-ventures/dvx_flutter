@@ -43,6 +43,11 @@ class CDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final DialogTheme dialogTheme = DialogTheme.of(context);
+
+    final color = backgroundColor ??
+        dialogTheme.backgroundColor ??
+        Theme.of(context).dialogBackgroundColor;
+
     return AnimatedPadding(
       padding: EdgeInsets.zero,
       duration: insetAnimationDuration,
@@ -50,20 +55,18 @@ class CDialog extends StatelessWidget {
       child: Center(
         child: ConstrainedBox(
           constraints: BoxConstraints(
-              maxHeight: MediaQuery.of(context).size.height - 100,
-              maxWidth: MediaQuery.of(context).size.width - 20),
+              maxHeight: MediaQuery.of(context).size.height * .90,
+              maxWidth: MediaQuery.of(context).size.width * .95),
           child: Material(
-            color: backgroundColor ??
-                dialogTheme.backgroundColor ??
-                Theme.of(context).dialogBackgroundColor,
+            color: Colors.transparent,
             elevation: dialogTheme.elevation ?? _defaultElevation,
             shape: dialogTheme.shape ?? _defaultDialogShape,
             type: MaterialType.card,
             clipBehavior: clipBehavior,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(
-                vertical: 4,
-                horizontal: 6,
+            child: Container(
+              decoration: BoxDecoration(
+                border: Border.all(color: color, width: 4),
+                color: Colors.black,
               ),
               child: child,
             ),
