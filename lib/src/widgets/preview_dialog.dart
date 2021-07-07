@@ -21,13 +21,12 @@ Future<bool?> showPreviewDialog({
 
 class CDialog extends StatelessWidget {
   const CDialog({
-    Key? key,
     this.backgroundColor,
     this.insetAnimationDuration = const Duration(milliseconds: 100),
     this.insetAnimationCurve = Curves.decelerate,
     this.clipBehavior = Clip.none,
     this.child,
-  }) : super(key: key);
+  });
 
   final Color? backgroundColor;
   final Duration insetAnimationDuration;
@@ -62,7 +61,10 @@ class CDialog extends StatelessWidget {
             type: MaterialType.card,
             clipBehavior: clipBehavior,
             child: Padding(
-              padding: const EdgeInsets.all(4.0),
+              padding: const EdgeInsets.symmetric(
+                vertical: 4,
+                horizontal: 6,
+              ),
               child: child,
             ),
           ),

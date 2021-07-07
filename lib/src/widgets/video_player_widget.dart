@@ -178,7 +178,7 @@ class _PlayPauseOverlay extends StatelessWidget {
           child: Positioned(
             bottom: 0,
             top: 0,
-            right: 10,
+            left: 10,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: InkWell(
@@ -197,9 +197,8 @@ class _PlayPauseOverlay extends StatelessWidget {
         Visibility(
           visible: onClose != null,
           child: Positioned(
-            bottom: 0,
-            top: 0,
-            left: 10,
+            top: 10,
+            right: 10,
             child: controller.value.isPlaying
                 ? const SizedBox.shrink()
                 : Padding(
