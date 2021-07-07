@@ -9,8 +9,12 @@ import 'package:dvx_flutter/src/widgets/preview_dialog.dart';
 import 'package:open_file/open_file.dart';
 import 'package:video_player/video_player.dart';
 
-Future<void> showVideoDialog(BuildContext context,
-    {ServerFile? serverFile, String? hostUrl}) {
+Future<void> showVideoDialog(
+  BuildContext context, {
+  ServerFile? serverFile,
+  String? hostUrl,
+  bool showFileOpener = true,
+}) {
   return showPreviewDialog(
     backgroundColor: Theme.of(context).primaryColor,
     context: context,
@@ -19,6 +23,7 @@ Future<void> showVideoDialog(BuildContext context,
         child: VideoPlayerWidget(
           serverFile: serverFile,
           hostUrl: hostUrl,
+          showFileOpener: showFileOpener,
           onClose: () {
             Navigator.pop(context);
           },
@@ -32,12 +37,16 @@ class VideoPlayerWidget extends StatefulWidget {
   const VideoPlayerWidget({
     required this.serverFile,
     required this.hostUrl,
+    this.showFileOpener = true,
+    this.openDialogOnTap = false,
     this.onClose,
   });
 
   final ServerFile? serverFile;
   final String? hostUrl;
   final void Function()? onClose;
+  final bool openDialogOnTap;
+  final bool showFileOpener;
 
   @override
   _VideoPlayerWidgetState createState() => _VideoPlayerWidgetState();
@@ -58,28 +67,30 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
       print('you have to set a serverFile or hostUrl in video player.');
     }
 
-    _controller!.addListener(() {
-      setState(() {});
-    });
-    _controller!.setLooping(true);
-    _controller!.initialize().then((_) => setState(() {}));
+    if (_controller != null) {
+      _controller!.addListener(() {
+        setState(() {});
+      });
+      _controller!.setLooping(true);
+      _controller!.initialize().then((_) => setState(() {}));
 
-    // only autoplay on files, not network
-    if (widget.serverFile != null) {
-      _controller!.play();
+      // only autoplay on files, not network
+      if (widget.serverFile != null) {
+        _controller!.play();
+      }
     }
   }
 
   @override
   void dispose() {
-    _controller!.dispose();
+    _controller?.dispose();
 
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    if (_controller!.value.isInitialized) {
+    if (_controller != null && _controller!.value.isInitialized) {
       return AspectRatio(
         aspectRatio: _controller!.value.aspectRatio,
         child: Stack(
@@ -88,6 +99,17 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
             _PlayPauseOverlay(
               controller: _controller!,
               onClose: widget.onClose,
+              showFileOpener: widget.showFileOpener,
+              onTap: widget.openDialogOnTap
+                  ? () {
+                      showVideoDialog(
+                        context,
+                        hostUrl: widget.hostUrl,
+                        serverFile: widget.serverFile,
+                        showFileOpener: widget.showFileOpener,
+                      );
+                    }
+                  : null,
             ),
             Positioned(
               bottom: 0,
@@ -108,10 +130,14 @@ class _PlayPauseOverlay extends StatelessWidget {
   const _PlayPauseOverlay({
     required this.controller,
     this.onClose,
+    this.showFileOpener = true,
+    this.onTap,
   });
 
   final VideoPlayerController controller;
   final void Function()? onClose;
+  final void Function()? onTap;
+  final bool showFileOpener;
 
   @override
   Widget build(BuildContext context) {
@@ -137,28 +163,36 @@ class _PlayPauseOverlay extends StatelessWidget {
         ),
         GestureDetector(
           onTap: () {
-            controller.value.isPlaying ? controller.pause() : controller.play();
+            if (onTap != null) {
+              onTap!();
+            } else {
+              controller.value.isPlaying
+                  ? controller.pause()
+                  : controller.play();
+            }
           },
         ),
-        Positioned(
-          bottom: 0,
-          top: 0,
-          right: 10,
-          child: controller.value.isPlaying || !hasVideoFile
-              ? const SizedBox.shrink()
-              : Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: InkWell(
-                    onTap: () {
-                      OpenFile.open(Uri.parse(controller.dataSource).path);
-                    },
-                    child: Icon(
-                      Utils.isIOS ? Ionicons.ios_open : Ionicons.md_open,
-                      color: Colors.white54,
-                      size: 32,
-                    ),
-                  ),
+        Visibility(
+          visible:
+              showFileOpener && !controller.value.isPlaying && hasVideoFile,
+          child: Positioned(
+            bottom: 0,
+            top: 0,
+            right: 10,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: InkWell(
+                onTap: () {
+                  OpenFile.open(Uri.parse(controller.dataSource).path);
+                },
+                child: Icon(
+                  Utils.isIOS ? Ionicons.ios_open : Ionicons.md_open,
+                  color: Colors.white54,
+                  size: 32,
                 ),
+              ),
+            ),
+          ),
         ),
         Visibility(
           visible: onClose != null,
