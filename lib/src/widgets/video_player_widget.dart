@@ -24,6 +24,7 @@ Future<void> showVideoDialog(
           serverFile: serverFile,
           hostUrl: hostUrl,
           showFileOpener: showFileOpener,
+          autoplay: true,
           onClose: () {
             Navigator.pop(context);
           },
@@ -39,6 +40,7 @@ class VideoPlayerWidget extends StatefulWidget {
     required this.hostUrl,
     this.showFileOpener = true,
     this.openDialogOnTap = false,
+    this.autoplay = false,
     this.onClose,
   });
 
@@ -47,6 +49,7 @@ class VideoPlayerWidget extends StatefulWidget {
   final void Function()? onClose;
   final bool openDialogOnTap;
   final bool showFileOpener;
+  final bool autoplay;
 
   @override
   _VideoPlayerWidgetState createState() => _VideoPlayerWidgetState();
@@ -74,8 +77,7 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
       _controller!.setLooping(true);
       _controller!.initialize().then((_) => setState(() {}));
 
-      // only autoplay on files, not network
-      if (widget.serverFile != null) {
+      if (widget.autoplay) {
         _controller!.play();
       }
     }
