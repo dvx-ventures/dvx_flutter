@@ -125,10 +125,7 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
       );
     }
 
-    return Padding(
-      padding: const EdgeInsets.all(20),
-      child: LoadingWidget(),
-    );
+    return LoadingWidget();
   }
 }
 
