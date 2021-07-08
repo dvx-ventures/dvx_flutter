@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:dvx_flutter/src/widgets/loading_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:dvx_flutter/src/file_system/server_file.dart';
@@ -124,7 +125,10 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
       );
     }
 
-    return NothingWidget();
+    return Padding(
+      padding: const EdgeInsets.all(20),
+      child: LoadingWidget(),
+    );
   }
 }
 
