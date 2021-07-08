@@ -7,10 +7,20 @@ class SharedContext {
   SharedContext._();
 
   static SharedContext? _instance;
+  late BuildContext? _context;
 
-  // must set this and get this
-  BuildContext? context;
+  BuildContext get context {
+    // Will crash if null, this should never be null
+    return _context!;
+  }
+
+  set context(BuildContext context) {
+    _context = context;
+  }
 }
+
+// =======================================================================
+// =======================================================================
 
 class SharedContextWidget extends StatelessWidget {
   const SharedContextWidget({required this.child});
