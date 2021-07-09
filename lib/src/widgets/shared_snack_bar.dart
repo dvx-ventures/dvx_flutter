@@ -30,7 +30,7 @@ class SharedSnackBars {
 
   Future<void> _processStream() async {
     await for (final snackbar in _pending.stream) {
-      final BuildContext context = SharedContext().context;
+      final BuildContext context = SharedContext().scaffoldContext;
 
       await SharedSnackBar._show(
         context,
