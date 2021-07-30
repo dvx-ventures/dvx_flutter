@@ -5,6 +5,7 @@ import 'dart:io';
 
 import 'package:http/http.dart' as http;
 import 'package:http/io_client.dart' as io_client;
+import 'package:sentry/sentry.dart';
 
 import 'common.dart';
 import 'event.dart';
@@ -334,7 +335,7 @@ class Requests {
       client = io_client.IOClient(ioClient);
     } else {
       // The default client validates SSL certificates and fail if invalid
-      client = http.Client();
+      client = SentryHttpClient(client: http.Client());
     }
 
     Uri uri = Uri.parse(url);
