@@ -334,7 +334,9 @@ class Requests {
       ioClient.badCertificateCallback = (_, __, ___) => true;
       client = io_client.IOClient(ioClient);
     } else {
-      // The default client validates SSL certificates and fail if invalid
+      // The default client:
+      // validates SSL certificates and fails if invalid
+      // logs all calls to Sentry
       client = SentryHttpClient(client: http.Client());
     }
 
