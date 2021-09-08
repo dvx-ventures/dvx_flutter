@@ -1,11 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_colorpicker/flutter_colorpicker.dart';
-import 'package:flutter_icons/flutter_icons.dart';
 import 'package:dvx_flutter/src/themes/editor/theme_set.dart';
 import 'package:dvx_flutter/src/themes/editor/theme_set_manager.dart';
 import 'package:dvx_flutter/src/widgets/headers/browser_header.dart';
 import 'package:dvx_flutter/src/widgets/list_row.dart';
 import 'package:dvx_flutter/src/widgets/theme_button.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_icons/flutter_icons.dart';
 
 class ThemeColorEditorScreen extends StatefulWidget {
   const ThemeColorEditorScreen({required this.themeSet, required this.field});
@@ -52,14 +51,16 @@ class _ThemeColorEditorScreenState extends State<ThemeColorEditorScreen> {
           child: Column(
             children: <Widget>[
               const SizedBox(height: 10),
-              HsvColorPicker(
-                showLabel: false,
-                pickerAreaBorderRadius:
-                    const BorderRadius.all(Radius.circular(8)),
-                enableAlpha: false,
-                pickerColor: currentColor,
-                onColorChanged: changeColorHsv,
-              ),
+              Text(
+                  'This used to be the HsvColorPicker but needed to be removed.'),
+              // HsvColorPicker(
+              //   showLabel: false,
+              //   pickerAreaBorderRadius:
+              //       const BorderRadius.all(Radius.circular(8)),
+              //   enableAlpha: false,
+              //   pickerColor: currentColor,
+              //   onColorChanged: changeColorHsv,
+              // ),
               const SizedBox(height: 20),
               const BrowserHeader(
                 'Example Header',

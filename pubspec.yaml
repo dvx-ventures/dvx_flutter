@@ -1,6 +1,6 @@
 name: dvx_flutter
 description: Shared DVX Flutter package project.
-version: 1.0.2
+version: 1.0.3
 author: null
 homepage: distantfutu.re
 publish_to: "none"
@@ -32,7 +32,6 @@ dependencies:
   flare_flutter: ^3.0.1
   flutter_archive: ^4.0.1
   flutter_barcode_scanner: ^2.0.0
-  flutter_colorpicker: ^0.5.0
   flutter_keyboard_visibility: ^5.0.1
   flutter_multi_formatter: ^2.3.1
   flutter_parsed_text: ^2.2.1
