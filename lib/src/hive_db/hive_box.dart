@@ -23,6 +23,8 @@ class HiveBox<T> {
     return _box?.listenable();
   }
 
+  bool isOpen() => _box != null;
+
   // open first or it will crash
   Future<void> open() async {
     _refCount++;

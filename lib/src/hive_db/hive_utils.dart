@@ -1,9 +1,9 @@
 import 'dart:io';
 
-import 'package:flutter/material.dart';
 import 'package:dvx_flutter/src/hive_db/hive_box.dart';
 import 'package:dvx_flutter/src/hive_db/hive_data.dart';
 import 'package:dvx_flutter/src/utils/utils.dart';
+import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
@@ -38,7 +38,9 @@ class HiveUtils {
     Hive.registerAdapter<HiveData>(HiveDataAdapter());
 
     // open prefs box before app runs so it's ready
-    await HiveBox.prefsBox.open();
+    if (!HiveBox.prefsBox.isOpen()) {
+      await HiveBox.prefsBox.open();
+    }
   }
 }
 
